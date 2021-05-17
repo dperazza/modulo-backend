@@ -13,7 +13,7 @@ const createUser = (req, res) => {
     var data = responseAdapter(isValid, loginData);
     res.json({ data });
 };
-
+//this is a comment
 const loginAdapter = (req) => {
     const loginData = {
         usuario: req.body.user,
@@ -25,7 +25,7 @@ const loginAdapter = (req) => {
 }
 const responseAdapter = (isValid, loginData) =>{
     var data = {
-        message: "Usuario: " + loginData.usuario + "  fue creado exitosamente"
+        message: "Usuario: " + loginData.usuario + "  fue creado muy exitosamente"
     }
 
     if (!isValid) {
